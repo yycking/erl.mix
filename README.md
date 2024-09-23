@@ -14,10 +14,17 @@ create Erlang from mix
    -module(example).
    -export([hello/0]).
 
+   %% Documentation
+   %% Hello world.
+   %%
+   %% Examples:
+   %%     1> :erlample.hello()
+   %%     world.
+
    hello() ->
        world.
    ```
 4. run
    1. `iex -S mix`
-   2. `Example.hello()`
+   2. `:erlample.hello()`
    
