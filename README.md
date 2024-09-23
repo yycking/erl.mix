@@ -40,4 +40,5 @@ create Erlang from mix
        end
    end
    ```
+ 6. run test `mix test`  
    
