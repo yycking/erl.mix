@@ -24,10 +24,18 @@ create Erlang from mix
    hello() ->
        world.
    ```
-4. run
-   1. `iex -S mix`
-   2. `:erlample.hello()`
-5. edit file `test/example_test.exs`
+4. run iex
+   ```console
+   $ iex -S mix
+   Erlang/OTP 27 [erts-15.1] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+   
+   Compiling 1 file (.erl)
+   Generated erlample app
+   Interactive Elixir (1.17.3) - press Ctrl+C to exit (type h() ENTER for help)
+   iex(1)> :erlample.hello()
+   :world
+   ```
+5. edit test file `test/example_test.exs`
    replace
    ```elixir
    defmodule ExampleTest do
@@ -40,5 +48,13 @@ create Erlang from mix
        end
    end
    ```
- 6. run test `mix test`  
+ 6. run test
+   ```console
+   $ mix test
+   Running ExUnit with seed: 79742, max_cases: 16
+
+   ..
+   Finished in 0.01 seconds (0.00s async, 0.01s sync)
+   1 doctest, 1 test, 0 failures
+   ```
    
